@@ -19,12 +19,12 @@ import main.java.order.backend.clone.Product;
 @Path("/")
 public class OrderRest {
 
-	private static long id = 1;
+	private static long id = 1; 
 	
 	@Inject
 	private RestTemplate restTemplate;
 	
-	@GET
+	@GET 
 	@Path("order")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Order submitOrder(@QueryParam("idCustomer") long idCustomer, @QueryParam("idProduct") long idProduct, @QueryParam("amount") long amount) {
