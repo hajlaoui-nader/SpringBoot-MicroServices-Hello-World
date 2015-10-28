@@ -25,7 +25,7 @@ public class OrderRest {
 	private RestTemplate restTemplate;
 	
 	@GET 
-	@Path("order")
+	@Path("order") 
 	@Produces(MediaType.APPLICATION_JSON)
 	public Order submitOrder(@QueryParam("idCustomer") long idCustomer, @QueryParam("idProduct") long idProduct, @QueryParam("amount") long amount) {
 		Order order = new Order();
