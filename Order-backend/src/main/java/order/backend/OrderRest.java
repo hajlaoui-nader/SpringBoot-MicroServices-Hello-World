@@ -40,8 +40,8 @@ public class OrderRest {
 		order.setAmount(amount);
 		order.setDateOrder(new Date());
 		
-		System.out.println(customer.getName());
-		System.out.println(product.getDescription());
+		System.out.println("Customer : " + customer.getName());
+		System.out.println("Product : " + product.getDescription());
 		
 		id++;
 		
